@@ -18,6 +18,19 @@ function getButtonValueById(btnCLick){
 
 
 
+////calculation
+//per player
+document.getElementById('calculate-btn').addEventListener('click',function(){
+  const inputElement = getInputValueById('per-player')
+  
+  const calculateResult = inputElement*5;
+
+  const playerExpenses = document.getElementById('player-expenses');
+  playerExpenses.innerText = calculateResult;
+})
+
+
+
 
 
 
