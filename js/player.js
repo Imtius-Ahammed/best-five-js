@@ -1,5 +1,21 @@
 function getButtonValueById(btnCLick){
   document.getElementById('color').style.backgroundColor='bg-green-200';
+
+  const button1 = document.getElementById('color-1');
+  button1.style.backgroundColor='gray';
+  const button2 = document.getElementById('color-2');
+  button2.style.backgroundColor='gray';
+  const button3 = document.getElementById('color-3');
+  button3.style.backgroundColor='gray';
+  const button4 = document.getElementById('color-4');
+  button4.style.backgroundColor='gray';
+  const button5 = document.getElementById('color-5');
+  button5.style.backgroundColor='gray';
+  const button6 = document.getElementById('color-6');
+  button6.style.backgroundColor='gray';
+  
+  
+
   
 
   const playerList = document.getElementById('order-list');
@@ -27,6 +43,22 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
 
   const playerExpenses = document.getElementById('player-expenses');
   playerExpenses.innerText = calculateResult;
+})
+
+// manager and coach
+
+document.getElementById('calculate-total').addEventListener('click', function(){
+  const managerInput = getInputValueById('manager-input');
+
+ 
+  const coachInput = getInputValueById('coach-input');
+
+  const playerExpenses = getTextValueById('player-expenses');
+
+  const calculateTotal = managerInput + coachInput + playerExpenses;
+
+  const total = document.getElementById('total');
+  total.innerText = calculateTotal;
 })
 
 
