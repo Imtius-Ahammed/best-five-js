@@ -40,7 +40,7 @@
             <img src="images/shakib.jpg" alt="" />
             <h2 id="player1-name" class="text-3xl text-bold mb-3">Shakib Al Hasan</h2>
             <p class="mb-3">7000 runs + 800 Wickets</p>
-            <button id="color-1" onclick="getButtonValueById('Shakib Al Hasan'),this.disabled = true"
+            <button onclick="getButtonValueById('Shakib Al Hasan'),this.disabled = true,this.style.background='gray'"
               class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
             >
               Select
@@ -51,8 +51,8 @@
             <img src="images/babar.webp" alt="" />
             <h2 class="text-3xl text-bold mb-3" >Babar Azam</h2>
             <p class="mb-3">4560 runs + 00 Wickets</p>
-            <button id="color-2" onclick="getButtonValueById('Babar Azam'),this.disabled = true"
-              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200  hover:text-black font-bold text-2xl"
+            <button  onclick="getButtonValueById('Babar Azam'),this.disabled = true,this.style.background='gray';"
+              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
             >
               Select
             </button>
@@ -61,7 +61,7 @@
             <img src="images/imamul.jpg" alt="" />
             <h2 class="text-3xl text-bold mb-3" >	Imam-ul-Haq</h2>
             <p class="mb-3">5567 runs + 30 Wickets</p>
-            <button id="color-3" onclick="getButtonValueById('Imam-ul-Haq'),this.disabled = true"
+            <button onclick="getButtonValueById('Imam-ul-Haq'),this.disabled = true,this.style.background='gray'"
               class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
             >
               Select
@@ -88,7 +88,7 @@
             <img src="images/rassie.webp" alt="" />
             <h2 class="text-3xl text-bold mb-3" >Rassie van der Dussen</h2>
             <p class="mb-3">5000 runs + 00 Wickets</p>
-            <button id="color-4" onclick="getButtonValueById('Rassie van der Dussen'),this.disabled = true"
+            <button  onclick="getButtonValueById('Rassie van der Dussen'),this.disabled = true,this.style.background='gray'"
               class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
             >
               Select
@@ -98,7 +98,7 @@
             <img src="images/rassie.webp" alt="" />
             <h2 class="text-3xl text-bold mb-3" id="player5-name">	Quinton de Kock</h2>
             <p class="mb-3">6000 runs + 200 Wickets</p>
-            <button id="color-5" onclick="getButtonValueById('Quinton de Kock'),this.disabled = true"
+            <button   onclick="getButtonValueById('Quinton de Kock'),this.disabled = true,this.style.background='gray'"
               class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
             >
               Select
@@ -108,7 +108,7 @@
             <img src="images/shakib.jpg" alt="" />
             <h2 class="text-3xl text-bold mb-3" >Virat Kohli</h2>
             <p class="mb-3">6700 runs + 800 Wickets</p>
-            <button id="color-6" onclick="getButtonValueById('Imam-ul-Haq'),this.disabled = true"
+            <button  onclick="getButtonValueById('Imam-ul-Haq'),this.disabled = true,this.style.background='gray'"
               class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
             >
               Select
@@ -127,10 +127,10 @@
             <p class="text-3xl text-yellow-300 m-2">Player Expenses: <span class="text-red-700 ">$</span> <span class="text-red-700 font-bold" id="player-expenses">00</span></p>
             
             <p><span class="text-2xl text-yellow-300">Manager : </span
-              ><input class="border text-black  px-2" type="text" name="" id="per-player" /></p>
+              ><input class="border text-black  px-2" type="text" name="" id="manager-input" /></p>
 
               <p><span class="text-2xl text-yellow-300">Coach : </span
-                ><input class="border text-black m-3 px-2" type="text" name="" id="per-player" /></p>
+                ><input class="border text-black m-3 px-2" type="text" name="" id="coach-input" /></p>
             <p>
               <button id="calculate-total" class="bg-blue-400 w-10/12 px-2  py-2">
                 Calculate Total
