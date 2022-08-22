@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Five Cricketer</title>
+    <!-- custom css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- heading -->
+    <header>
+      <section class="bg-neutral-900 flex items-center justify-between">
+        <div>
+          <img src="images/background.png" alt="" />
+        </div>
+
+        <div class="w-1/2 text-white text-center">
+          <h1 class="text-5xl text-red-300">This is the Best FIve</h1>
+          <h3 class="text-2xl mt-4">
+            The process has always been rather secretive, even mystical, and the
+            choice personal, sometimes downright eccentric.
+          </h3>
+        </div>
+
+        <div>
+          <img src="images/balling.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <!-- heading -->
+
+    <!-- mainSection -->
+    <main class="bg-stone-500">
+      <section class="container mx-auto pt-12 bg-neutral-400">
+        <!-- cardsection -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-2 gap-4 m-5">
+          <div class="text-center bg-stone-300">
+            <img src="images/shakib.jpg" alt="" />
+            <h2 id="player1-name" class="text-3xl text-bold mb-3" id="player1-name">Shakib Al Hasan</h2>
+            <p class="mb-3">7000 runs + 800 Wickets</p>
+            <button id="player-1"
+              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
+            >
+              Select
+            </button>
+          </div>
+
+          <div class="text-center bg-stone-300">
+            <img src="images/shakib.jpg" alt="" />
+            <h2 class="text-3xl text-bold mb-3" id="player2-name">Babar Azam</h2>
+            <p class="mb-3">7000 runs + 800 Wickets</p>
+            <button id="player-2"
+              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
+            >
+              Select
+            </button>
+          </div>
+          <div class="text-center bg-stone-300">
+            <img src="images/shakib.jpg" alt="" />
+            <h2 class="text-3xl text-bold mb-3" id="player3-name">	Imam-ul-Haq</h2>
+            <p class="mb-3">7000 runs + 800 Wickets</p>
+            <button id="player-3"
+              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
+            >
+              Select
+            </button>
+          </div>
+
+          <!-- list -->
+
+          <div  class="bg-blue-300 text-white" >
+            <div>
+              <ol class="text-center" id="top-five"></ol>
+
+            </div>
+            
+            
+            
+          </div>
+
+          <div class="text-center bg-stone-300">
+            <img src="images/shakib.jpg" alt="" />
+            <h2 class="text-3xl text-bold mb-3" id="player4-name">Rassie van der Dussen</h2>
+            <p class="mb-3">7000 runs + 800 Wickets</p>
+            <button id="player-4"
+              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
+            >
+              Select
+            </button>
+          </div>
+          <div class="text-center bg-stone-300">
+            <img src="images/shakib.jpg" alt="" />
+            <h2 class="text-3xl text-bold mb-3" id="player5-name">	Quinton de Kock</h2>
+            <p class="mb-3">7000 runs + 800 Wickets</p>
+            <button id="player-5"
+              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
+            >
+              Select
+            </button>
+          </div>
+          <div class="text-center bg-stone-300">
+            <img src="images/shakib.jpg" alt="" />
+            <h2 class="text-3xl text-bold mb-3" id="player6-name">Virat Kohli</h2>
+            <p class="mb-3">7000 runs + 800 Wickets</p>
+            <button id="player-6"
+              class="w-10/12 py-3 m-3 bg-blue-400 hover:bg-green-200 hover:text-black font-bold text-2xl"
+            >
+              Select
+            </button>
+          </div>
+
+          <!-- calculationPart -->
+          <div class="text-center bg-black text-white">
+            <h1>Budget</h1>
+            <span>Per Player </span
+            ><input class="border text-black" type="text" name="" id="per-player" />
+            <p class="mt-5">
+              <button id="calculate-btn" class="bg-blue-400 w-10/12 px-4 py-2">Calculate</button>
+            </p>
+
+            <p>Player Expenses: $<span class="text-red-700 font-bold" id="player-expenses">00</span></p>
+            
+            <p class="m-4">
+              Manager <input class="text-black" type="text" name="" id="manager-input" />
+            </p>
+            <p class="m-4">
+              Coach <input class="text-black" type="text" name="" id="coach-input" />
+            </p>
+            <p>
+              <button id="calculate-total" class="bg-blue-400 w-10/12 px-4 py-2">
+                Calculate Total
+              </button>
+            </p>
+
+            <div class="flex justify-around mt-5">
+              <p>Total</p>
+              <p class="text-red-500 font-bold">$ <span id="total">00</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- mainSection -->
+    </main>
+
+    <footer class="bg-black">
+      <section>Hello
+
+        
+      </section>
+    </footer>
+    <script src="js/functionality.js"></script>
+    <script src="js/player.js"></script>
+  </body>
+</html>
