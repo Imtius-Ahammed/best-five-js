@@ -2,9 +2,11 @@
 ////calculation
 //per player
 document.getElementById('calculate-btn').addEventListener('click',function(){
-  const inputElement = getInputValueById('per-player')
+  const inputElement = getInputValueById('per-player');
+  const orderList = document.getElementById('order-list');
+  const orderListChild = orderList.children.length;
   
-  const calculateResult = inputElement*5;
+  const calculateResult = inputElement*orderListChild;
 
   const playerExpenses = document.getElementById('player-expenses');
   playerExpenses.innerText = calculateResult;
